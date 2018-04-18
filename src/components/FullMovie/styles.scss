@@ -1,0 +1,21 @@
+@import '../../theme/reset';
+@import '../../theme/palette';
+
+.fullMovie {
+	width: 960px;
+	margin: 20px auto;
+	
+	img {
+		height: 400px;
+		margin-right: 25px;
+		float: left;
+	}
+
+	.back {
+		text-decoration: none;
+		color: $color2;
+		background: $color4;
+		border-radius: 5px;
+		padding: 5px 10px;
+	}
+}

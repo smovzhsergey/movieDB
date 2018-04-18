@@ -1,0 +1,49 @@
+@import '../../theme/reset';
+@import '../../theme/palette';
+$button-size: 38px;
+
+.mainPage{
+  width: 80%;
+  margin: 0 auto;
+  font-size: 16px;
+
+  .movies{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .paginationPanel {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px;
+
+    span {
+      border: 2px solid $color1;
+      border-radius: 3px;
+      cursor: pointer;
+      margin: 5px;
+      padding: 5px; 
+
+      &.active {
+        border-color: $color4;
+        background: $color4;
+        color: $color2;
+      }
+    }
+  }
+  @media (min-width: 1599px) {
+    width: 1100px;
+  }
+
+  @media (max-width: 1100px) {
+    width: 96%;
+  }
+
+}
+
+
+
+
+
+

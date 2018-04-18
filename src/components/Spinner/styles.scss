@@ -1,0 +1,27 @@
+@import '../../theme/palette';
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinnerCont {
+  padding: 50px 0;
+
+
+  .spinner {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    animation: spin 1.2s infinite linear;
+    border-top: 4px solid $color5;
+    border-right: 4px solid $color5;
+    border-bottom: 4px solid $color3;
+    border-left: 4px solid $color3;
+    border-radius: 50%;
+    background: transparent;
+  }
+
+}

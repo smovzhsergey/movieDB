@@ -1,0 +1,12 @@
+@import '../../theme/reset';
+@import '../../theme/palette';
+
+header {
+	border-bottom: 3px solid $color4;
+	padding: 20px 0;
+
+	input {
+		padding: 5px 10px;
+		margin-right: 10px;
+	}
+}
