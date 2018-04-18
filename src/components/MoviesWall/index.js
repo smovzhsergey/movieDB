@@ -37,7 +37,7 @@ export default class MoviesWall extends Component {
     }
 
     _getNewMovies (event) {
-        const page = +event.target.innerText;
+        const page = Number(event.target.innerText);
         this.props.actions.fetchMovies(page);
     }
 

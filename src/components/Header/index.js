@@ -68,7 +68,7 @@ export default class Header extends Component {
     render () {
 
         const { queryValue, yearValue } = this.state;
-        const { value: { queryValue: query, yearValue: year } } = this.props;
+        const { value: { queryValue: query, yearValue: year } } = this.props;        
         const printData = !query ?
             null :
             year ?
@@ -80,8 +80,8 @@ export default class Header extends Component {
                 <form onSubmit = { this.handleSubmit } >
                     <input type = 'text' placeholder = 'query' name = 'query' value = { queryValue } onChange = { this.changeQuery }/>
                     <input type = 'text' placeholder = 'year' name = 'year' value = { yearValue } onChange = { this.changeYear }/>
-                    <input type = 'submit' value = 'Get Movies' />
-                    <input type = 'button' value = 'Clear Query Data' onClick = { this.clearQuery }/>
+                    <input type = 'submit' value = 'Get Movies' disabled = { queryValue ? false : true } />
+                    <input type = 'button' value = 'Clear Query Data' disabled = { query ? false : true } onClick = { this.clearQuery }/>
                 </form>
                 { printData }
             </header>
